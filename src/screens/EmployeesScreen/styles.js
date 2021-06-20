@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     width: vh * 4,
     backgroundColor: appTheme.white,
   },
+  avatar: {height: vh * 8, width: vh * 8},
 });
 
 export default styles;

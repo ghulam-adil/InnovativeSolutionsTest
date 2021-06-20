@@ -18,6 +18,13 @@ const styles = StyleSheet.create({
     right: vw * 3,
     position: 'absolute',
   },
+  weatherImage: {height: vh * 8, width: vh * 8},
+  itemContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    margin: vh * 2,
+  },
 });
 
 export default styles;

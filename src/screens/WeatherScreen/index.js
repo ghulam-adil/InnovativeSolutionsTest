@@ -20,20 +20,14 @@ const WeatherScreen = () => {
 
   const renderWeatherItem = ({item, index}) => {
     return (
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          margin: vh * 2,
-        }}>
+      <View style={styles.itemContainer}>
         <Text style={{width: '20%'}}>{item.weather_state_name}</Text>
         <Text>{item.the_temp.toFixed(2)}</Text>
         <Image
           source={{
             uri: `https://www.metaweather.com/static/img/weather/png/${item.weather_state_abbr}.png`,
           }}
-          style={{height: vh * 8, width: vh * 8}}
+          style={styles.weatherImage}
         />
       </View>
     );

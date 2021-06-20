@@ -30,10 +30,7 @@ const EmployeesScreen = () => {
     return (
       <View style={styles.itemContainer}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image
-            source={generalImages.avatar}
-            style={{height: vh * 8, width: vh * 8}}
-          />
+          <Image source={generalImages.avatar} style={styles.avatar} />
           <View style={{marginLeft: vw * 4}}>
             <Text style={{fontSize: vh * 3}}>{item.name}</Text>
             <Text>{item.age}</Text>
